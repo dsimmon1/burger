@@ -1,0 +1,54 @@
+<h1>Eat-Da-Burger!</h1>
+
+<div class="container">
+
+    <div class="one">
+        <h2>Avaiable to Eat</h2>
+        
+        <hr>
+            <div class="burgers">
+                <ol>
+                    {{#each burger}}
+                    {{#unless devoured}}
+                        <li> {{burger_name}} </li>
+                        <button id="devoured" type="submit" data-id="{{id}}" data-name="{{burger_name}}">Devour it!</button>
+                    {{/unless}}
+                    {{/each}}
+                </ol>
+            </div>
+    </div>
+    
+    <div class="two">
+        <h2>Burgers that have been eaten!</h2>
+
+        <hr>
+
+            <div class="eaten">
+                <ul>
+                    {{#each burger}}
+                    {{#if devoured}}
+                        <li> {{burger_name}} </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+
+        <h2>Suggest a new burger</h2>
+
+        <hr>
+        
+        <form class="create-form">
+            <div class="form-group">
+                <label for="ca">Burger Name:</label>
+                <input type="text" id="burger" name="name">
+            </div>
+            <button type="submit" id="add">Add New Burger</button>
+        </form>
+    </div>
+</div>
+
+<hr>
+
+<div class="footer">
+    <p><a href="/api/burger">API Burger List</a> | <a href="https://github.com/dsimmon1/burger">GitHub Repo</a></p>
+</div>

@@ -1,0 +1,38 @@
+body {
+	margin: 20px 0 0 10px;
+	background-image: url(/assets/img/483951.jpg);
+	background-size: 100%;
+    background-repeat: repeat;
+
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.one {
+	background-color: rgba(255, 255, 255, 0.85);
+	padding: 10px;
+	border: solid 2px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+li {
+	font-size: 15px;
+	padding: 5px;
+}
+
+button {
+	font-size: 12px;
+}
+
+.two {
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.85);
+	border: solid 2px;
+}
